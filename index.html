@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/index.css">
+    <script defer src="index.js"></script>
+    <title>Транслит</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <div class="container">
+        <h1>T.R.A.N.S.L.I.T.</h1>
+      </div>
+    </div>
+
+    <div class="input">
+      <div class="container">
+        <div class="input__window">
+          <div class="input__controls">
+            <input type="text" id="input-translit" placeholder="Начните вводить текст" autofocus>
+            <button id="button-translit">Добавить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="results">
+      <div class="container">
+        <div class="results__table">
+          <ol id="ru">
+            <li class="example">
+              <div>Привет 👋🏻</div>
+              <button class="delete-btn">
+                <div class="delete-icon"></div>
+              </button>
+            </li>
+          </ol>
+          <div class="splitter"></div>
+          <ol id="tr">
+            <li class="example">
+              <div>Privet</div>
+              <button class="delete-btn">
+                <div class="delete-icon"></div>
+              </button>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="clear-all">
+      <div class="container clear-all__container">
+        <button id="clear-all__btn">
+          <div class="clear-all__icon">
+            <div class="delete-icon"></div>
+          </div>
+          <div class="clear-all__text">Очистить всё</div>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
